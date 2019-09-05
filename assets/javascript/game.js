@@ -1,13 +1,16 @@
 let teamOneButton = document.querySelector ("#teamone-shoot");
 let teamOneShotCounter = document.querySelector ("#teamone-numshots")
 let teamOneGoals = document.querySelector ("#teamone-numhits");
+let teamOnesoundBite = new Audio("./assets/audio/crowdcheer.mp3")
 
 teamOneButton.addEventListener ("click", function()
 {
+    
     teamOneShotCounter.innerHTML = parseInt(teamOneShotCounter.innerHTML) + 1;
 
     if (Math.random() < .25)
     {
+        teamOnesoundBite.play()
         teamOneGoals.innerHTML = parseInt(teamOneGoals.innerHTML) + 1;
     }
 })

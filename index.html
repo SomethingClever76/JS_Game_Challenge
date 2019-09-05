@@ -16,42 +16,49 @@
       clear: both;
     }
   </style>
+  <link rel="stylesheet" href="assets/stylesheets/styles.css">
 </head>
 <body>
-  <div style="width: 700px;margin: 0 auto;">
-    <h1 style="margin-bottom:5px">Hockey, JavaScript, and the DOM oh My!</h1>
-    <h2 style="margin-top: 0">...the game!</h2>
-    <div style="margin: 0 auto;text-align:center">
-      <button id="reset">RESET</button><br>
-      NUMBER OF RESETS: <span id="num-resets">0</span>
+  <div class="silver"></div>
+  <div id="pacerBlue"></div>
+  <section>
+    <div id="pacerPic" style="width: 100%; margin: 0 auto;">
+      <h1 style="margin-bottom:5px">PACERS vs KNICKS ... the game!</h1>
+      <h2 style="margin-top: 0">(An exercise in using JavaScript and the DOM!)</h2>
+      <div id="resetB" style="margin: 0 auto;text-align:center">
+        <button id="reset">RESET</button><br>
+        NUMBER OF RESETS: <span id="num-resets">0</span>
+      </div>
+      <div class="clear"></div>
+      <div class="left">
+        <h2>
+          Pacers
+        </h2>
+        <div class="hits">
+          SHOT ATTEMPTS: <span id="teamone-numshots">0</span><br>
+          POINTS: <span id="teamone-numhits">0</span>
+        </div>
+        <div>
+          <button id="teamone-shoot">SHOOT</button>
+        </div>
+      </div>
+      <div class="right">
+        <h2>
+          KNICKS
+        </h2>
+        <div class="hits">
+          SHOT ATTEMPTS: <span id="teamtwo-numshots">0</span><br>
+          POINTS: <span id="teamtwo-numhits">0</span>
+        </div>
+        <div>
+          <button id="teamtwo-shoot">SHOOT</button>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-    <div class="left">
-      <h2>
-        Team 1
-      </h2>
-      <div class="hits">
-        SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
-        GOALS: <span id="teamone-numhits">0</span>
-      </div>
-      <div>
-        <button id="teamone-shoot">SHOOT</button>
-      </div>
-    </div>
-    <div class="right">
-      <h2>
-        Team 2
-      </h2>
-      <div class="hits">
-        SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
-        GOALS: <span id="teamtwo-numhits">0</span>
-      </div>
-      <div>
-        <button id="teamtwo-shoot">SHOOT</button>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
+  </section>
+  <div id="pacerGold"></div>
+  <div class="silver"></div>
   <script src="assets/javascript/game.js"></script>
 </body>
 </html>
