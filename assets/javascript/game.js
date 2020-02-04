@@ -1,3 +1,4 @@
+//saving from class
 let teamOneButton = document.querySelector ("#teamone-shoot");
 let teamOneShotCounter = document.querySelector ("#teamone-numshots")
 let teamOneGoals = document.querySelector ("#teamone-numhits");
